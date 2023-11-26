@@ -1,0 +1,6 @@
+C:\Users\MN\source\repos\pr_QLdailyinternet\DBL\bin\Debug\DBL.dll
+C:\Users\MN\source\repos\pr_QLdailyinternet\DBL\bin\Debug\DBL.pdb
+C:\Users\MN\source\repos\pr_QLdailyinternet\DBL\obj\Debug\DBL.csproj.AssemblyReference.cache
+C:\Users\MN\source\repos\pr_QLdailyinternet\DBL\obj\Debug\DBL.csproj.CoreCompileInputs.cache
+C:\Users\MN\source\repos\pr_QLdailyinternet\DBL\obj\Debug\DBL.dll
+C:\Users\MN\source\repos\pr_QLdailyinternet\DBL\obj\Debug\DBL.pdb

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="c0a78f71-894b-462f-8362-a61f078d9cb6" name="QuanLyDVGiaoHangEntities Mapping">
+      <data-sources db="84a995c4-9eb0-4496-b67b-d9a965483ae7" ddl="2939a849-e319-4ff6-a553-f5594c3ca992" />
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="2939a849-e319-4ff6-a553-f5594c3ca992" />
+          <option name="name" value="QuanLyDVGiaoHangEntities (DDL)" />
+          <option name="dbmsName" value="MSSQL" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/App.config" />
+            </array>
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

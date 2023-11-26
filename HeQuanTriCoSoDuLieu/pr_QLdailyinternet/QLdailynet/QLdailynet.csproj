@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBB7091B-FC4C-46D1-95FD-4986DD667A68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLdailynet</RootNamespace>
+    <AssemblyName>QLdailynet</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatDichVu.designer.cs">
+      <DependentUpon>DatDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoiMatKhauKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoiMatKhauKH.Designer.cs">
+      <DependentUpon>FrmDoiMatKhauKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDichVu.Designer.cs">
+      <DependentUpon>FrmDichVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiemDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiemDanh.Designer.cs">
+      <DependentUpon>FrmDiemDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoiMatKhauNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoiMatKhauNV.designer.cs">
+      <DependentUpon>FrmDoiMatKhauNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiaoDich.Designer.cs">
+      <DependentUpon>FrmGiaoDich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHang.Designer.cs">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhachHangDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhachHangDN.Designer.cs">
+      <DependentUpon>FrmKhachHangDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMay.designer.cs">
+      <DependentUpon>FrmMay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhieuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhieuChi.Designer.cs">
+      <DependentUpon>FrmPhieuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSanPham.designer.cs">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThuChi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThuChi.Designer.cs">
+      <DependentUpon>FrmThuChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="PROJECT_INTERNETDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECT_INTERNETDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECT_INTERNETDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECT_INTERNETDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECT_INTERNETDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECT_INTERNETDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECT_INTERNETDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECT_INTERNETDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECT_INTERNETDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROJECT_INTERNETDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DatDichVu.resx">
+      <DependentUpon>DatDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoiMatKhauKH.resx">
+      <DependentUpon>FrmDoiMatKhauKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDichVu.resx">
+      <DependentUpon>FrmDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiemDanh.resx">
+      <DependentUpon>FrmDiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoiMatKhauNV.resx">
+      <DependentUpon>FrmDoiMatKhauNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiaoDich.resx">
+      <DependentUpon>FrmGiaoDich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhachHang.resx">
+      <DependentUpon>FrmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhachHangDN.resx">
+      <DependentUpon>FrmKhachHangDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMay.resx">
+      <DependentUpon>FrmMay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhieuChi.resx">
+      <DependentUpon>FrmPhieuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSanPham.resx">
+      <DependentUpon>FrmSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThuChi.resx">
+      <DependentUpon>FrmThuChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="PROJECT_INTERNETDataSet.xsc">
+      <DependentUpon>PROJECT_INTERNETDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECT_INTERNETDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet.xss">
+      <DependentUpon>PROJECT_INTERNETDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet1.xsc">
+      <DependentUpon>PROJECT_INTERNETDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECT_INTERNETDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet1.xss">
+      <DependentUpon>PROJECT_INTERNETDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet2.xsc">
+      <DependentUpon>PROJECT_INTERNETDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECT_INTERNETDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet2.xss">
+      <DependentUpon>PROJECT_INTERNETDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet3.xsc">
+      <DependentUpon>PROJECT_INTERNETDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECT_INTERNETDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet3.xss">
+      <DependentUpon>PROJECT_INTERNETDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet4.xsc">
+      <DependentUpon>PROJECT_INTERNETDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROJECT_INTERNETDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROJECT_INTERNETDataSet4.xss">
+      <DependentUpon>PROJECT_INTERNETDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BAL\BAL.csproj">
+      <Project>{ecb03625-4f0d-4e9b-8f46-c3e43dfa2120}</Project>
+      <Name>BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBL\DBL.csproj">
+      <Project>{5ff5ee9e-70ce-4c44-9200-f97981958f53}</Project>
+      <Name>DBL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dangnhap_tk_mk_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btndangnhap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnthoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_destiny-2-cool-gaming_1920x1080.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper_main_frm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anh quan nett copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 CYBER INTERFACE 2102023.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homicidal all stars wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_78b53f3d-e20e-4408-a673-6f6d7dcb9cad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123 copy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnnhanvien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKhachHang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDichVu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1681872757561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnGiaoDIch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPhieuChi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnthoat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnDiemDanh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casino-manager1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grocery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pos-terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet-with-card-sticking-out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sony.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-book-day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnminisize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh Sách Giao DỊch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tải Dữ Liệu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tìm Kiếm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tải Lại_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đăng Ký.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xóa Tài Khoản.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đặt Dịch Vụ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đăng Xuất.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đặt  DỊch Vụ 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đăng xuất 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doanh THu của Đại Lý.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer 29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chi phí của Đại Lý.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnThuChi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transactional.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đổi Mật khẩu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh sách đặt dịch vụ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Đặt hàng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hủy bỏ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh Sách Làm việc_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh Sách Nhân viên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danh sách thông tin máy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh Sách Dịch VỤ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh Sách Phiếu chi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Danh Sách Khách hàng.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
